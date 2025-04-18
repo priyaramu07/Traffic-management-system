@@ -1,0 +1,16 @@
+CREATE DATABASE multi_vehicle_data;
+
+USE multi_vehicle_data;
+
+CREATE TABLE lane_vehicle_count (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+    lane1_fwd INT DEFAULT 0,
+    lane1_bwd INT DEFAULT 0,
+    lane2_fwd INT DEFAULT 0,
+    lane2_bwd INT DEFAULT 0,
+    lane3_fwd INT DEFAULT 0,
+    lane3_bwd INT DEFAULT 0,
+    lane4_fwd INT DEFAULT 0,
+    lane4_bwd INT DEFAULT 0
+);
